@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17" started-at="2017-07-20T18:57:53Z" finished-at="2017-07-20T18:57:53Z">
+  <suite name="Default suite" duration-ms="20" started-at="2017-07-20T20:11:29Z" finished-at="2017-07-20T20:11:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17" started-at="2017-07-20T18:57:53Z" finished-at="2017-07-20T18:57:53Z">
+    <test name="Default test" duration-ms="20" started-at="2017-07-20T20:11:29Z" finished-at="2017-07-20T20:11:29Z">
       <class name="com.fanniemae.testcases.SDET_Login_TesCase">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.fanniemae.testcases.SDET_Login_TesCase@73846619]" name="setUp" is-config="true" duration-ms="0" started-at="2017-07-20T14:57:47Z" finished-at="2017-07-20T14:57:47Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.fanniemae.testcases.SDET_Login_TesCase@73846619]" name="setUp" is-config="true" duration-ms="0" started-at="2017-07-20T16:11:24Z" finished-at="2017-07-20T16:11:24Z">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Unable to create new remote session. desired capabilities = Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}], required capabilities = Capabilities [{}]
@@ -54,7 +54,7 @@ Driver info: driver.version: InternetExplorerDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="tc_loginTestCase()[pri:0, instance:com.fanniemae.testcases.SDET_Login_TesCase@73846619]" name="tc_loginTestCase" duration-ms="1" started-at="2017-07-20T14:57:53Z" finished-at="2017-07-20T14:57:53Z">
+        <test-method status="SKIP" signature="tc_loginTestCase()[pri:0, instance:com.fanniemae.testcases.SDET_Login_TesCase@73846619]" name="tc_loginTestCase" duration-ms="0" started-at="2017-07-20T16:11:29Z" finished-at="2017-07-20T16:11:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_loginTestCase -->
