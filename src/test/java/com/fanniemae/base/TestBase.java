@@ -87,7 +87,7 @@ public class TestBase {
 
 			if (config.getProperty("browser").equals("firefox")) {
 
-				 System.setProperty("webdriver.gecko.driver", "gecko.exe");
+				 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
 				driver = new FirefoxDriver();
 	//			log.debug("FF Launched !!!");
 
@@ -108,7 +108,7 @@ public class TestBase {
 
 			driver.get(config.getProperty("testsiteurl"));
 	//		log.debug("Navigated to : " + config.getProperty("testsiteurl"));
-			driver.manage().window().maximize();
+			//driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
 			wait = new WebDriverWait(driver, 5);
@@ -127,6 +127,8 @@ public class TestBase {
 			System.out.println("xpath LOCATOR: " + (OR.getProperty(locator)));
 		} else if (locator.startsWith("id_")) {
 			driver.findElement(By.id(OR.getProperty(locator))).click();
+		}else{
+			System.out.println("ELSE PART click");
 		}
 		//test.log(LogStatus.INFO, "Clicking on : " + locator);
 	}
@@ -139,6 +141,8 @@ public class TestBase {
 			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
 		} else if (locator.startsWith("id_")) {
 			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
+		}else{
+			System.out.println("ELSE PART Type");
 		}
 
 		//test.log(LogStatus.INFO, "Typing in : " + locator + " entered value as " + value);

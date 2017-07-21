@@ -13,10 +13,11 @@ public class SDET_Login_TesCase  extends TestBase {
    
    public void tc_loginTestCase(){
 	   
+	   System.out.println("************Start**********************8");
 	   click("id_LoginBtn");
-	   type("xpath_User", "FM-SDET");
-	     type("id_pwd" ,"Hexaware");
-	      click("id_BottomLoginButton");
+	   type("xpath_User", "test@sdettraining.com");
+	   type("xpath_pwd" ,"test");
+	   click("xpath_BottomLoginButton");
 	 
 	      Assert.assertEquals("", "");
    }
